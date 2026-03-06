@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "no.f12"
-version = "0.1.2-SNAPSHOT"
+version = "0.1.0"
 
 gradlePlugin {
     website.set("https://github.com/anderssv/gradle-dsm-plugin")
@@ -35,8 +35,7 @@ repositories {
 
 dependencies {
     implementation("org.ow2.asm:asm:9.7.1")
-    testImplementation(kotlin("test"))
-    testImplementation("org.junit.jupiter:junit-jupiter:5.12.2")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
