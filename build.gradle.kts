@@ -1,6 +1,8 @@
+import org.gradle.plugin.compatibility.compatibility
+
 plugins {
     `kotlin-dsl`
-    id("com.gradle.plugin-publish") version "1.3.1"
+    id("com.gradle.plugin-publish") version "2.1.0"
 }
 
 group = "no.f12"
@@ -18,6 +20,11 @@ gradlePlugin {
                 "Useful for identifying cyclic dependencies, measuring coupling, and guiding refactoring."
             tags.set(listOf("architecture", "dependencies", "analysis", "dsm", "coupling"))
             implementationClass = "dsm.DsmPlugin"
+            compatibility {
+                features {
+                    configurationCache = true
+                }
+            }
         }
     }
 }
