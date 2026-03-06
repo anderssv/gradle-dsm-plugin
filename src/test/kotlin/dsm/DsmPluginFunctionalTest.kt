@@ -16,8 +16,8 @@ class DsmPluginFunctionalTest {
 
     @BeforeEach
     fun setup() {
-        // Copy source files from test-project (lives in repo root)
-        val testProjectSrc = File("test-project/src")
+        // Copy source files from test resources
+        val testProjectSrc = File(javaClass.classLoader.getResource("test-project/src")!!.toURI())
         testProjectSrc.copyRecursively(File(projectDir, "src"))
 
         // Write minimal build files for TestKit (withPluginClasspath injects the plugin)
