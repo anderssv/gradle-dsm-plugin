@@ -22,6 +22,12 @@ Coding agents operate without the implicit architectural understanding that huma
 - **Objective guardrails.** An agent can run the DSM before and after a refactoring to verify it did not introduce new cyclic dependencies or increase coupling. This is a concrete, checkable constraint rather than a vague instruction to "keep the architecture clean."
 - **Scoped analysis.** The `rootPackage` and `depth` parameters let you point the agent at the relevant slice of the codebase, keeping the output focused and the signal-to-noise ratio high.
 
+## Getting started
+
+Copy-paste this to your agent:
+
+> Add the no.f12.dsm plugin to this project and update AGENTS.md with instructions to run the DSM to check for status after completing a feature. It is always good to check pre and after status as well.
+
 ## Installation
 
 Apply the plugin in your `build.gradle.kts`:
