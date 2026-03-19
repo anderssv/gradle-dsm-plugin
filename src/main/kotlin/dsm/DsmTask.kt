@@ -47,7 +47,7 @@ abstract class DsmTask : DefaultTask() {
     abstract val htmlOutputFile: RegularFileProperty
 
     init {
-        group = "verification"
+        group = "dsm"
         description = "Generates a Dependency Structure Matrix (DSM) from compiled bytecode"
     }
 

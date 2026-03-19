@@ -63,7 +63,7 @@ class DsmPlugin : Plugin<Project> {
 
         project.tasks.register("dsmAgentHelp", DsmAgentHelpTask::class.java).configure {
             description = "Shows AI agent instructions for using the DSM plugin effectively"
-            group = "verification"
+            group = "dsm"
         }
     }
 }

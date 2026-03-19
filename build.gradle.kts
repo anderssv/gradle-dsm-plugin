@@ -35,7 +35,8 @@ repositories {
 
 dependencies {
     implementation("org.ow2.asm:asm:9.7.1")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")
+    testImplementation(kotlin("test"))
+    testImplementation("org.junit.jupiter:junit-jupiter:5.12.2")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
