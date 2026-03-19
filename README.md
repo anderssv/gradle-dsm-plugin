@@ -26,7 +26,9 @@ Coding agents operate without the implicit architectural understanding that huma
 
 Copy-paste this to your agent:
 
-> Add the no.f12.dsm plugin to this project and update AGENTS.md with instructions to run the DSM to check for status after completing a feature. It is always good to check pre and after status as well.
+> Add the no.f12.dsm plugin to this project. After installing, run `./gradlew dsmAgentHelp` for full usage instructions. Then update AGENTS.md with instructions to run the DSM to check for status after completing a feature. It is always good to check pre and after status as well.
+
+The `dsmAgentHelp` task prints agent-optimized instructions covering workflow, parameters, and how to read the matrix. You can also use its output as the starting point for a custom agent skill if your tool supports it (e.g. a Claude Code skill or Cursor rule).
 
 ## Installation
 
