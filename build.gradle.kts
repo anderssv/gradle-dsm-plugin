@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "no.f12"
-version = "0.1.0"
+version = "0.1.1"
 
 gradlePlugin {
     website.set("https://github.com/anderssv/gradle-dsm-plugin")
