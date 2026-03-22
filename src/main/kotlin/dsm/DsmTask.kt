@@ -48,7 +48,9 @@ abstract class DsmTask : DefaultTask() {
 
     init {
         group = "dsm"
-        description = "Generates a Dependency Structure Matrix (DSM) from compiled bytecode"
+        description = "Generates a Dependency Structure Matrix (DSM) from compiled bytecode. " +
+            "Configure via the dsm {} block: rootPackage, depth, htmlOutputFile. " +
+            "Override on CLI with -Pdsm.depth=N or -Pdsm.html=path."
     }
 
     @TaskAction
